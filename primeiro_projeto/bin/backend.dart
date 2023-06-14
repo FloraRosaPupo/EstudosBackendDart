@@ -16,7 +16,7 @@ void main() async {
 
   await CustomServer().initialize(
     handler: handler,
-    address: await CustomEnv.get(key: 'server_address'),
+    address: 'localhost', //await CustomEnv.get(key: 'server_address'),
     port: 8080,
   );
 }
